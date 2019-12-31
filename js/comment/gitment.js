@@ -265,7 +265,7 @@ var galTheme = {
 							submitButton.innerText = '发表评论'
 						})
 						.catch(error => {
-							console.log(error)
+							//console.log(error)
 							submitButton.removeAttribute('disabled')
 							submitButton.innerText = '发表评论'
 						})
@@ -378,7 +378,7 @@ if ($('#sidebar-recent_comments')) {
 
 		})
 	}).fail(function (error) {
-		console.log(error)
+		//console.log(error)
 	});
 }
 
@@ -393,7 +393,7 @@ if ($('.article-excerpt').length >= 1) {
 			creator: owner
 		}
 	}).done(function(issues) {
-		console.log(issues)
+		
 		$excerpts.each(function () {
 			const that = $(this)
 			that.find('h1 > a > span').each(function () {
@@ -409,7 +409,7 @@ if ($('.article-excerpt').length >= 1) {
 			})
 		})
 	}).fail(function (error) {
-		console.log(error)
+		//console.log(error)
 	});
 }
 

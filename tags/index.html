@@ -12,7 +12,7 @@
     
     
     
-    <title>标签集合 | 遇见</title>
+    <title>标签目录 | 遇见</title>
     <link href="https://orignn.github.io" rel="prefetch" />
 
     
@@ -136,19 +136,71 @@
                 
                 
                 
-                <li class="">
-                    <a href="/categories">
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>分类
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/hexo/">hexo</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/Linux/">Linux</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/categories">...</a>
+                        </li>
+                        
+                        
+                    </ul>
                 </li>
                 
                 
                 
-                <li class="current">
-                    <a href="/tags">
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>标签
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/hexo/">hexo</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/">防火墙</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
                 </li>
+                
                 
                 
                 
@@ -167,21 +219,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
-
-
-<article class="article well article-body" id="article">
+                    <article class="article well article-body" id="article-tags">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://orignn.github.io">遇见</a>
+        >
+        <span>标签</span>
+    </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/index.html">标签集合</a>
+                <a href="/tags">标签集合</a>
             </h1>
-        </div>
-        <div class="tag-article">
-            <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2020-01-03
-            </span>
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -189,21 +239,36 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/index.html">标签集合</a>
+                    <a href="/tags">标签集合</a>
                 </h4>
             </div>
-            <p>
-                <i class="fa fa-calendar"></i> 2020-01-03
-            </p>
         </center>
     </div>
-    <div class="content-article">
-        
+    <div class="content-article" style="margin-top: 30px;">
+        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+            <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+            <br>
+            
+            <a href="/tags/hexo/">hexo</a>
+            <br>
+            
+            <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/">防火墙</a>
+            <br>
+            
+            <a href="/tags/Linux/">Linux</a>
+            <br>
+            
+            <a href="/tags/Typora/">Typora</a>
+            <br>
+            
+            <a href="/tags/%E7%A4%BA%E4%BE%8B/">示例</a>
+            <br>
+            
+            
+        </div>
     </div>
 </article>
-
-
-
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -343,6 +408,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2020/eab1798a.html">搭建酸酸乳</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2019/6842f00a.html">示例文章</a>
                 </span>
             </li>
@@ -350,12 +421,6 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2020/d276cfd9.html">酸酸乳config参数</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/eab1798a.html">搭建酸酸乳</a>
                 </span>
             </li>
             
@@ -388,17 +453,17 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 12.999275198677942px;" class="tag-cloud-link">酸酸乳</a>
+    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 9.104715139110777px;" class="tag-cloud-link">酸酸乳</a>
     
-    <a href="/tags/hexo/" style="font-size: 11.667808714003737px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 16.77883208856244px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 16.18554522349253px;" class="tag-cloud-link">防火墙</a>
+    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 9.47326734406196px;" class="tag-cloud-link">防火墙</a>
     
-    <a href="/tags/Linux/" style="font-size: 9.581873545651284px;" class="tag-cloud-link">Linux</a>
+    <a href="/tags/Linux/" style="font-size: 10.029586414735519px;" class="tag-cloud-link">Linux</a>
     
-    <a href="/tags/Typora/" style="font-size: 16.670007094069256px;" class="tag-cloud-link">Typora</a>
+    <a href="/tags/Typora/" style="font-size: 12.970348307151937px;" class="tag-cloud-link">Typora</a>
     
-    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 9.669018569386822px;" class="tag-cloud-link">示例</a>
+    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 10.699553955744253px;" class="tag-cloud-link">示例</a>
     
 </div>
                 

@@ -12,7 +12,7 @@
     
     
     
-    <title>tags: 示例 | 遇见</title>
+    <title>Linux防火墙相关指令 | 遇见</title>
     <link href="https://orignn.github.io" rel="prefetch" />
 
     
@@ -144,7 +144,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/tags">
                         <i class="fa fa-tags"></i>标签
                     </a>
@@ -167,19 +167,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://orignn.github.io">遇见</a>
         >
-        <span>标签</span>
+        <span>Linux防火墙相关指令</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html">示例</a>
+                <a href="/2020/df034ce8.html">Linux防火墙相关指令</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/">防火墙</a>, 
+                
+                <a href="/tags/Linux/">Linux</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-01-03
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -187,21 +204,66 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html">示例</a>
+                    <a href="/2020/df034ce8.html">Linux防火墙相关指令</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-01-03
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/">防火墙</a>, 
+                
+                <a href="/tags/Linux/">Linux</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2019/6842f00a.html">示例文章</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <h2 id="CentOS7打开关闭防火墙与端口的基本命令"><a href="#CentOS7打开关闭防火墙与端口的基本命令" class="headerlink" title="CentOS7打开关闭防火墙与端口的基本命令"></a>CentOS7打开关闭防火墙与端口的基本命令</h2><p><strong>firewalld的基本使用</strong> </p>
+<p>启动： systemctl start firewalld</p>
+<p>关闭： systemctl stop firewalld</p>
+<p>查看状态： systemctl status firewalld </p>
+<p>开机禁用  ： systemctl disable firewalld</p>
+<p>开机启用  ： systemctl enable firewalld</p>
+<p><strong>systemctl是CentOS7的服务管理工具中主要的工具，它融合之前service和chkconfig的功能于一体。</strong> </p>
+<p>启动一个服务：systemctl start firewalld.service</p>
+<p>关闭一个服务：systemctl stop firewalld.service</p>
+<p>重启一个服务：systemctl restart firewalld.service</p>
+<p>显示一个服务的状态：systemctl status firewalld.service</p>
+<p>在开机时启用一个服务：systemctl enable firewalld.service</p>
+<p>在开机时禁用一个服务：systemctl disable firewalld.service</p>
+<p>查看服务是否开机启动：systemctl is-enabled firewalld.service</p>
+<p>查看已启动的服务列表：systemctl list-unit-files|grep enabled</p>
+<p>查看启动失败的服务列表：systemctl –failed</p>
+<p><strong>配置firewalld-cmd</strong> </p>
+<p>查看版本： firewall-cmd –version</p>
+<p>查看帮助： firewall-cmd –help</p>
+<p>显示状态： firewall-cmd –state</p>
+<p>查看所有打开的端口： firewall-cmd –zone=public –list-ports</p>
+<p>更新防火墙规则： firewall-cmd –reload</p>
+<p>查看区域信息:  firewall-cmd –get-active-zones</p>
+<p>查看指定接口所属区域： firewall-cmd –get-zone-of-interface=eth0</p>
+<p>拒绝所有包：firewall-cmd –panic-on</p>
+<p>取消拒绝状态： firewall-cmd –panic-off</p>
+<p>查看是否拒绝： firewall-cmd –query-panic</p>
+<p><strong>添加端口</strong> </p>
+<p>firewall-cmd –zone=public –add-port=80/tcp –permanent    （–permanent永久生效，没有此参数重启后失效）</p>
+<p>重新载入</p>
+<p>firewall-cmd –reload</p>
+<p>查看</p>
+<p>firewall-cmd –zone= public –query-port=80/tcp</p>
+<p>删除</p>
+<p>firewall-cmd –zone= public –remove-port=80/tcp –permanent</p>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -368,17 +430,17 @@
 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/df034ce8.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/df034ce8.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/df034ce8.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -386,17 +448,17 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 16.18964559487731px;" class="tag-cloud-link">酸酸乳</a>
+    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 11.443579563754325px;" class="tag-cloud-link">酸酸乳</a>
     
-    <a href="/tags/hexo/" style="font-size: 19.63559724886688px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 16.972219645134743px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 9.06101067277961px;" class="tag-cloud-link">防火墙</a>
+    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 19.05173761897893px;" class="tag-cloud-link">防火墙</a>
     
-    <a href="/tags/Linux/" style="font-size: 10.19638134983413px;" class="tag-cloud-link">Linux</a>
+    <a href="/tags/Linux/" style="font-size: 16.697052975566187px;" class="tag-cloud-link">Linux</a>
     
-    <a href="/tags/Typora/" style="font-size: 11.60107968691488px;" class="tag-cloud-link">Typora</a>
+    <a href="/tags/Typora/" style="font-size: 19.288747388592142px;" class="tag-cloud-link">Typora</a>
     
-    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 19.563489126150483px;" class="tag-cloud-link">示例</a>
+    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 11.740582656457315px;" class="tag-cloud-link">示例</a>
     
 </div>
                 

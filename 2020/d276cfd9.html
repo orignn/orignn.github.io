@@ -12,7 +12,7 @@
     
     
     
-    <title>tags: 示例 | 遇见</title>
+    <title>酸酸乳config参数 | 遇见</title>
     <link href="https://orignn.github.io" rel="prefetch" />
 
     
@@ -144,7 +144,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/tags">
                         <i class="fa fa-tags"></i>标签
                     </a>
@@ -167,19 +167,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://orignn.github.io">遇见</a>
         >
-        <span>标签</span>
+        <span>酸酸乳config参数</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html">示例</a>
+                <a href="/2020/d276cfd9.html">酸酸乳config参数</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-01-03
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -187,21 +202,198 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html">示例</a>
+                    <a href="/2020/d276cfd9.html">酸酸乳config参数</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-01-03
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2019/6842f00a.html">示例文章</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <h1 id="酸酸乳user-config-json参数内容"><a href="#酸酸乳user-config-json参数内容" class="headerlink" title="酸酸乳user-config.json参数内容"></a>酸酸乳user-config.json参数内容</h1><p>各选项说明（<strong>注意，你应该修改使用initcfg.sh脚本初始化后的user-config.json</strong>）：</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Explanation</th>
+<th>中文说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>server</td>
+<td>the address your server listens</td>
+<td>监听地址</td>
+</tr>
+<tr>
+<td>server_ipv6</td>
+<td>the ipv6 address your server listens</td>
+<td>ipv6地址</td>
+</tr>
+<tr>
+<td>server_port</td>
+<td>server port</td>
+<td>监听端口</td>
+</tr>
+<tr>
+<td>local_address</td>
+<td>the address your local listens</td>
+<td>本地地址</td>
+</tr>
+<tr>
+<td>local_port</td>
+<td>local port</td>
+<td>本地端口</td>
+</tr>
+<tr>
+<td>password</td>
+<td>password used for encryption</td>
+<td>密码</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>in seconds</td>
+<td>超时时间</td>
+</tr>
+<tr>
+<td>udp_timeout</td>
+<td>in seconds</td>
+<td>UDP链超时时间</td>
+</tr>
+<tr>
+<td>udp_cache</td>
+<td>cache size</td>
+<td>UDP链缓冲区大小</td>
+</tr>
+<tr>
+<td>method</td>
+<td>default: “aes-256-cfb”, see Encryption</td>
+<td>加密方式</td>
+</tr>
+<tr>
+<td>protocol</td>
+<td>default：”origin”</td>
+<td>协议插件，默认”origin”</td>
+</tr>
+<tr>
+<td>protocol_param</td>
+<td>default：””</td>
+<td>协议插件参数，默认””</td>
+</tr>
+<tr>
+<td>obfs</td>
+<td>default：”tls1.2_ticket_auth_compatible”</td>
+<td>混淆插件，默认”tls1.2_ticket_auth_compatible”</td>
+</tr>
+<tr>
+<td>obfs_param</td>
+<td>default：””</td>
+<td>混淆插件参数，默认””</td>
+</tr>
+<tr>
+<td>redirect</td>
+<td>default：””</td>
+<td>重定向参数，默认””</td>
+</tr>
+<tr>
+<td>dns_ipv6</td>
+<td>default:false</td>
+<td>是否优先使用IPv6地址，有IPv6时可开启</td>
+</tr>
+<tr>
+<td>fast_open</td>
+<td>use TCP_FASTOPEN, true / false</td>
+<td>快速打开(仅限linux客户端)</td>
+</tr>
+<tr>
+<td>workers</td>
+<td>number of workers, available on Unix/Linux</td>
+<td>线程（仅限linux客户端）</td>
+</tr>
+<tr>
+<td>verbose</td>
+<td>display verbose debug info</td>
+<td>显示调试信息</td>
+</tr>
+<tr>
+<td>connect_verbose_info</td>
+<td>display connection verbose info</td>
+<td>显示连接信息</td>
+</tr>
+<tr>
+<td>forbidden_ip</td>
+<td>forbidden IP set for outbound</td>
+<td>阻止连接到此IP列表</td>
+</tr>
+<tr>
+<td>forbidden_port</td>
+<td>forbidden port set for outbound</td>
+<td>阻止连接到此端口列表</td>
+</tr>
+<tr>
+<td>ignore_bind</td>
+<td>not bind the IP set</td>
+<td>不绑定的IP列表</td>
+</tr>
+<tr>
+<td>out_bind</td>
+<td>force bind this IPv4 IP</td>
+<td>强制绑定此IPv4地址</td>
+</tr>
+<tr>
+<td>out_bindv6</td>
+<td>force bind this IPv6 IP</td>
+<td>强制绑定此IPv6地址</td>
+</tr>
+<tr>
+<td>additional_ports</td>
+<td>additional ports for multiuser mode</td>
+<td>多用户模式下配置额外端口</td>
+</tr>
+<tr>
+<td>speed_limit_per_con</td>
+<td>rate limit for each connection</td>
+<td>单连接限速，单位KB</td>
+</tr>
+<tr>
+<td>speed_limit_per_user</td>
+<td>rate limit for each user</td>
+<td>单用户限速，单位KB</td>
+</tr>
+</tbody></table>
+<p>redirect参数说明：</p>
+<p>值为空字符串或一个列表，若为列表示例如</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"redirect":["bing.com", "cloudflare.com:443"],</span><br></pre></td></tr></table></figure>
+
+<p>作用是在连接方的数据不正确的时候，把数据重定向到列表中的其中一个地址和端口（不写端口则 视为80），以伪装为目标服务器。</p>
+<p>dns_ipv6参数说明：</p>
+<p>为true则指定服务器优先使用IPv6地址。仅当服务器能访问IPv6地址时可以用，否则会导致有IPv6地 址的网站无法打开。</p>
+<p>一般情况下，只需要修改以下五项即可：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"server_port":8388,        //端口</span><br><span class="line">"password":"password",     //密码</span><br><span class="line">"protocol":"origin",       //协议插件</span><br><span class="line">"obfs":"http_simple",      //混淆插件</span><br><span class="line">"method":"aes-256-cfb",    //加密方式</span><br></pre></td></tr></table></figure>
+
+<h2 id="多端口配置"><a href="#多端口配置" class="headerlink" title="多端口配置"></a>多端口配置</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>:<span class="string">"0.0.0.0"</span>,</span><br><span class="line">    <span class="attr">"server_ipv6"</span>: <span class="string">"[::]"</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>:<span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"port_password"</span>:&#123;</span><br><span class="line">        <span class="attr">"80"</span>:<span class="string">"password1"</span>,</span><br><span class="line">        <span class="attr">"443"</span>:<span class="string">"password2"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"protocol"</span>: <span class="string">"auth_sha1_compatible"</span>,</span><br><span class="line">    <span class="attr">"protocol_param"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"obfs"</span>: <span class="string">"http_simple_compatible"</span>,</span><br><span class="line">    <span class="attr">"obfs_param"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"redirect"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"dns_ipv6"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"workers"</span>: <span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>按照格式修改端口和密码：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"port_password":&#123;</span><br><span class="line">    "80":"password1",       //端口和密码1</span><br><span class="line">    "443":"password2"       //端口和密码2</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>如果要为每个端口配置不同的混淆协议，请写入以下配置：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>:<span class="string">"0.0.0.0"</span>,</span><br><span class="line">    <span class="attr">"server_ipv6"</span>:<span class="string">"::"</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>:<span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"port_password"</span>:&#123;</span><br><span class="line">        <span class="attr">"8388"</span>:&#123;<span class="attr">"protocol"</span>:<span class="string">"auth_simple"</span>, <span class="attr">"password"</span>:<span class="string">"abcde"</span>, <span class="attr">"obfs"</span>:<span class="string">"http_simple"</span>, <span class="attr">"obfs_param"</span>:<span class="string">""</span>&#125;,</span><br><span class="line">        <span class="attr">"8389"</span>:&#123;<span class="attr">"protocol"</span>:<span class="string">"origin"</span>, <span class="attr">"password"</span>:<span class="string">"abcde"</span>&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"protocol"</span>: <span class="string">"auth_sha1_compatible"</span>,</span><br><span class="line">    <span class="attr">"protocol_param"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"obfs"</span>: <span class="string">"http_simple_compatible"</span>,</span><br><span class="line">    <span class="attr">"obfs_param"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"redirect"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"dns_ipv6"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"workers"</span>: <span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>按格式修改端口、密码以及混淆协议。也可以和以前的格式混合使用，如果某个端口不配置混淆协 议，则会使用下面的默认”obfs”配置。</p>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -368,17 +560,17 @@
 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/d276cfd9.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/d276cfd9.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/d276cfd9.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -386,17 +578,17 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 16.18964559487731px;" class="tag-cloud-link">酸酸乳</a>
+    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 18.12213472270198px;" class="tag-cloud-link">酸酸乳</a>
     
-    <a href="/tags/hexo/" style="font-size: 19.63559724886688px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 19.560980985866035px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 9.06101067277961px;" class="tag-cloud-link">防火墙</a>
+    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 13.854680603006262px;" class="tag-cloud-link">防火墙</a>
     
-    <a href="/tags/Linux/" style="font-size: 10.19638134983413px;" class="tag-cloud-link">Linux</a>
+    <a href="/tags/Linux/" style="font-size: 17.93651250456731px;" class="tag-cloud-link">Linux</a>
     
-    <a href="/tags/Typora/" style="font-size: 11.60107968691488px;" class="tag-cloud-link">Typora</a>
+    <a href="/tags/Typora/" style="font-size: 12.73158831655142px;" class="tag-cloud-link">Typora</a>
     
-    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 19.563489126150483px;" class="tag-cloud-link">示例</a>
+    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 18.691697620930753px;" class="tag-cloud-link">示例</a>
     
 </div>
                 

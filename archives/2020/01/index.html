@@ -12,7 +12,7 @@
     
     
     
-    <title>Hexo常用操作 | 遇见</title>
+    <title>archive_a | 遇见</title>
     <link href="https://orignn.github.io" rel="prefetch" />
 
     
@@ -128,7 +128,7 @@
                 
                 
                 
-                <li class="">
+                <li class="current">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -136,59 +136,19 @@
                 
                 
                 
-                
-                <li class="dropdown">
-                    <!-- TODO 添加hover dropdown效果 -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                <li class="">
+                    <a href="/categories">
                         <i class="fa fa-list"></i>分类
                     </a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li>
-                            <a href="/categories/hexo/">hexo</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/categories/%E7%A4%BA%E4%BE%8B/">示例</a>
-                        </li>
-                        
-                        
-                        
-                    </ul>
                 </li>
                 
                 
                 
-                
-                
-                <li class="dropdown">
-                    <!-- TODO 添加hover dropdown效果 -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                <li class="">
+                    <a href="/tags">
                         <i class="fa fa-tags"></i>标签
                     </a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li>
-                            <a href="/tags/hexo/">hexo</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/tags/%E7%A4%BA%E4%BE%8B/">示例</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/tags/Typora/">Typora</a>
-                        </li>
-                        
-                        
-                        
-                    </ul>
                 </li>
-                
                 
                 
                 
@@ -207,34 +167,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    
-<article class="article well article-body" id="article">
+                    <article class="article well article-body" id="article-archive">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://orignn.github.io">遇见</a>
         >
-        <span>Hexo常用操作</span>
+        <span>归档</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2019/08/30/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">Hexo常用操作</a>
+                <a href="/archives">归档</a>
             </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/hexo/">hexo</a>
-                
-            </span>
-            
-            <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2019-08-30
-            </span>
-            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -242,91 +187,60 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2019/08/30/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">Hexo常用操作</a>
+                    <a href="/archives">归档</a>
                 </h4>
             </div>
-            <p>
-                <i class="fa fa-calendar"></i> 2019-08-30
-            </p>
-            <p>
-                
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/hexo/">hexo</a>
-                
-                
-                
-            </p>
         </center>
     </div>
-    <div class="content-article">
-        <p><strong>常用操作</strong></p>
-<hr>
-<p>​    <strong>1. 创建文章</strong></p>
-<hr>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] <span class="tag">&lt;<span class="name">文章名字</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>参数：</p>
-<p>​    - [layout]参数</p>
-<table>
-<thead>
-<tr>
-<th>参数名</th>
-<th>功能</th>
-<th>文章路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>post</td>
-<td>新建文章</td>
-<td>source/_posts</td>
-</tr>
-<tr>
-<td>page</td>
-<td>新建页面</td>
-<td>source</td>
-</tr>
-<tr>
-<td>draft</td>
-<td>新建草稿</td>
-<td>source/_draft</td>
-</tr>
-</tbody></table>
-<p>​    </p>
-<p>​    <strong>2. 生成静态页面</strong></p>
-<hr>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p>​    部署上去的时候都需要先编译一下，编译后会出现一个public文件夹，将所有的md文件编译成html文件</p>
-<p>​    <strong>3. 开启本地服务</strong></p>
-<hr>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>​    开启本地hexo服务，默认地址为:<code>localhost:4000</code> </p>
-<p>​    <strong>4. 清除public</strong></p>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>​    当source文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译</p>
-<p>​    <strong>5. 部署到Github</strong></p>
-<hr>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<p>​     使用编辑器编辑好文章之后就可以使用该命令进行部署</p>
-
+    <div class="content-article" style="margin-top: 30px;">
+        
+        
+            <h1 style="font-size: 24px; margin-top: 40px;">2020年</h1>
+            
+        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+             
+             
+                        <a href="/2020/df034ce8.html">Linux防火墙相关指令</a>
+                        <br>
+            
+             
+                        <a href="/2020/7b25428e.html">BBR与锐速</a>
+                        <br>
+            
+             
+                        <a href="/2020/c9385dba.html">centos7安装网络限速工具</a>
+                        <br>
+            
+             
+                        <a href="/2020/d276cfd9.html">酸酸乳config参数</a>
+                        <br>
+            
+             
+                        <a href="/2020/eab1798a.html">搭建酸酸乳</a>
+                        <br>
+            
+             
+                        </div>
+                    <h1 style="font-size: 24px; margin-top: 40px;">2019年</h1>
+                    <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+                 
+             
+                        <a href="/2019/56ed2c1c.html">Hexo常用操作</a>
+                        <br>
+            
+             
+                        <a href="/2019/d697ddf5.html">Typora一些快捷键</a>
+                        <br>
+            
+             
+                        <a href="/2019/6842f00a.html">示例文章</a>
+                        <br>
+            
+                    </div>
+        
     </div>
 </article>
-
-
-<div id="comments-template"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script>
-	if(!window.commentConfig) {
-      window.commentConfig = {}
-      window.commentConfig.title = 'Hexo常用操作'
-    }
-</script>
-
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -372,19 +286,49 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/08/30/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">Hexo常用操作</a>
+                    <a href="/2020/df034ce8.html">Linux防火墙相关指令</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/08/30/Typora%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/">Typora一些快捷键</a>
+                    <a href="/2020/7b25428e.html">BBR与锐速</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/08/02/%E7%A4%BA%E4%BE%8B/">示例文章</a>
+                    <a href="/2020/c9385dba.html">centos7安装网络限速工具</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/d276cfd9.html">酸酸乳config参数</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/eab1798a.html">搭建酸酸乳</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/56ed2c1c.html">Hexo常用操作</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/d697ddf5.html">Typora一些快捷键</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/6842f00a.html">示例文章</a>
                 </span>
             </li>
             
@@ -406,19 +350,49 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/08/30/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">Hexo常用操作</a>
+                    <a href="/2020/7b25428e.html">BBR与锐速</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/08/02/%E7%A4%BA%E4%BE%8B/">示例文章</a>
+                    <a href="/2019/56ed2c1c.html">Hexo常用操作</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/08/30/Typora%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/">Typora一些快捷键</a>
+                    <a href="/2020/df034ce8.html">Linux防火墙相关指令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/d697ddf5.html">Typora一些快捷键</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/c9385dba.html">centos7安装网络限速工具</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/6842f00a.html">示例文章</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/d276cfd9.html">酸酸乳config参数</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/eab1798a.html">搭建酸酸乳</a>
                 </span>
             </li>
             
@@ -433,17 +407,17 @@
 
                 
                 <li>
-                    <a href="/2019/08/30/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/archives/2020/01/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/08/30/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/archives/2020/01/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/08/30/Hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/archives/2020/01/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -451,11 +425,17 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/hexo/" style="font-size: 13.077766491240531px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 11.203842194504245px;" class="tag-cloud-link">酸酸乳</a>
     
-    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 16.560876033749157px;" class="tag-cloud-link">示例</a>
+    <a href="/tags/hexo/" style="font-size: 15.153139063941243px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/Typora/" style="font-size: 17.511607427654255px;" class="tag-cloud-link">Typora</a>
+    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 15.741778676100562px;" class="tag-cloud-link">防火墙</a>
+    
+    <a href="/tags/Linux/" style="font-size: 14.886503002221314px;" class="tag-cloud-link">Linux</a>
+    
+    <a href="/tags/Typora/" style="font-size: 12.683679041888968px;" class="tag-cloud-link">Typora</a>
+    
+    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 19.80517766734136px;" class="tag-cloud-link">示例</a>
     
 </div>
                 
@@ -558,30 +538,6 @@
 <script src="/js/oni.js"></script>
 
 
-
-
-<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
-<script>
-    if(window.commentConfig) {
-      window.commentConfig.id = 'Fri Aug 30 2019 19:14:03 GMT+0800'
-      window.commentConfig.owner = 'orignn'
-      window.commentConfig.repo = 'comment'
-      window.commentConfig.client_id = 'b0f7a77a899713377eb6'
-      window.commentConfig.client_secret = '61922510b6685452f92626c02b73edc411679880'
-      window.commentConfig.redirect_uri = ''
-    } else {
-      window.commentConfig = {
-      	id: 'Fri Aug 30 2019 19:14:03 GMT+0800',
-        owner: 'orignn',
-        repo: 'comment',
-        client_id: 'b0f7a77a899713377eb6',
-        client_secret: '61922510b6685452f92626c02b73edc411679880',
-        redirect_uri: ''
-      }
-    }
-</script>
-
-<script src="/js/comment/gitment.js"></script>
 
 
 </html>

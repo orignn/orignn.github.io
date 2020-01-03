@@ -12,7 +12,7 @@
     
     
     
-    <title>tags: 示例 | 遇见</title>
+    <title>centos7安装网络限速工具 | 遇见</title>
     <link href="https://orignn.github.io" rel="prefetch" />
 
     
@@ -144,7 +144,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/tags">
                         <i class="fa fa-tags"></i>标签
                     </a>
@@ -167,19 +167,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://orignn.github.io">遇见</a>
         >
-        <span>标签</span>
+        <span>centos7安装网络限速工具</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html">示例</a>
+                <a href="/2020/c9385dba.html">centos7安装网络限速工具</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-01-03
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -187,21 +202,43 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html">示例</a>
+                    <a href="/2020/c9385dba.html">centos7安装网络限速工具</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-01-03
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2019/6842f00a.html">示例文章</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <h3 id="下载-wondershaper"><a href="#下载-wondershaper" class="headerlink" title="下载 wondershaper"></a>下载 wondershaper</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># cd /usr/local/</span></span><br><span class="line"><span class="meta"># git clone  https:<span class="comment">//github.com/magnific0/wondershaper.git</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="wondershaper-使用"><a href="#wondershaper-使用" class="headerlink" title="wondershaper 使用"></a>wondershaper 使用</h3><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 单位是 Kbps</span></span><br><span class="line">./wondershaper -a 网口名称 -u 上传速度 -d 下载速度</span><br><span class="line"></span><br><span class="line"><span class="comment">// 限制 eth0 网口上传下载为 102400  Kbps  100Mbps</span></span><br><span class="line">./wondershaper -a eth0 -u <span class="number">102400</span> -d <span class="number">102400</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 可以看到多了一个 ifb0 网口</span></span><br><span class="line"><span class="meta"># ip addr show</span></span><br><span class="line"><span class="number">1</span>: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span class="number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="number">1</span></span><br><span class="line">    link/loopback <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> brd <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span></span><br><span class="line">    inet <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>/<span class="number">8</span> scope host lo</span><br><span class="line">       valid_lft forever preferred_lft forever</span><br><span class="line"><span class="number">2</span>: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="number">1500</span> qdisc mq state UP qlen <span class="number">1000</span></span><br><span class="line">    link/ether <span class="number">00</span>:<span class="number">16</span>:<span class="number">3</span>e:<span class="number">0</span>e:<span class="number">48</span>:a7 brd ff:ff:ff:ff:ff:ff</span><br><span class="line">    inet <span class="number">10.3</span><span class="number">.200</span><span class="number">.99</span>/<span class="number">22</span> brd <span class="number">10.3</span><span class="number">.203</span><span class="number">.255</span> scope <span class="keyword">global</span> <span class="keyword">dynamic</span> eth0</span><br><span class="line">       valid_lft <span class="number">304404587</span>sec preferred_lft <span class="number">304404587</span>sec</span><br><span class="line"><span class="number">3</span>: ifb0: &lt;BROADCAST,NOARP,UP,LOWER_UP&gt; mtu <span class="number">1500</span> qdisc pfifo_fast state UNKNOWN qlen <span class="number">32</span></span><br><span class="line">    link/ether <span class="number">96</span>:<span class="number">3</span>a:<span class="number">32</span>:<span class="number">74</span>:<span class="number">1</span>e:<span class="number">01</span> brd ff:ff:ff:ff:ff:ff</span><br><span class="line"></span><br><span class="line"><span class="comment">// 查看限速状态</span></span><br><span class="line">./wondershaper -a eth0 -s</span><br><span class="line"></span><br><span class="line"><span class="comment">//取消限速</span></span><br><span class="line">./wondershaper -a eth0 -c</span><br></pre></td></tr></table></figure>
+
+<p><strong>KBps与Mbps的区别如下</strong> ：</p>
+<p>1.两者表示的物理意义不同，KBps用来表示带宽，Mbps用来表示网速。</p>
+<p>2.两者的数值不同，1Mbps=128KBps。</p>
+<p>3.两者的单位不同，KBps是千比特每秒，Mbps是兆位每秒。</p>
+<h2 id="安装speedtest测速工具"><a href="#安装speedtest测速工具" class="headerlink" title="安装speedtest测速工具"></a>安装speedtest测速工具</h2><p>从github克隆包到本地</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># git clone https://github.com/sivel/speedtest-cli.git</span><br></pre></td></tr></table></figure>
+
+<p>2.执行speedtest这个python脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~&#x2F;speedtest-cli</span><br><span class="line">python speedtest.py</span><br></pre></td></tr></table></figure>
+
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -368,17 +405,17 @@
 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/c9385dba.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/c9385dba.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/c9385dba.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -386,17 +423,17 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 16.18964559487731px;" class="tag-cloud-link">酸酸乳</a>
+    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 11.067410735448505px;" class="tag-cloud-link">酸酸乳</a>
     
-    <a href="/tags/hexo/" style="font-size: 19.63559724886688px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 18.387086540654852px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 9.06101067277961px;" class="tag-cloud-link">防火墙</a>
+    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 19.343391995534475px;" class="tag-cloud-link">防火墙</a>
     
-    <a href="/tags/Linux/" style="font-size: 10.19638134983413px;" class="tag-cloud-link">Linux</a>
+    <a href="/tags/Linux/" style="font-size: 15.552573528449415px;" class="tag-cloud-link">Linux</a>
     
-    <a href="/tags/Typora/" style="font-size: 11.60107968691488px;" class="tag-cloud-link">Typora</a>
+    <a href="/tags/Typora/" style="font-size: 19.049386120673187px;" class="tag-cloud-link">Typora</a>
     
-    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 19.563489126150483px;" class="tag-cloud-link">示例</a>
+    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 18.70967092971265px;" class="tag-cloud-link">示例</a>
     
 </div>
                 

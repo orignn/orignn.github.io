@@ -12,7 +12,7 @@
     
     
     
-    <title>tags: 示例 | 遇见</title>
+    <title>搭建酸酸乳 | 遇见</title>
     <link href="https://orignn.github.io" rel="prefetch" />
 
     
@@ -144,7 +144,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/tags">
                         <i class="fa fa-tags"></i>标签
                     </a>
@@ -167,19 +167,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://orignn.github.io">遇见</a>
         >
-        <span>标签</span>
+        <span>搭建酸酸乳</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html">示例</a>
+                <a href="/2020/eab1798a.html">搭建酸酸乳</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-01-03
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -187,21 +202,71 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html">示例</a>
+                    <a href="/2020/eab1798a.html">搭建酸酸乳</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-01-03
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/">酸酸乳</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2019/6842f00a.html">示例文章</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <h2 id="酸酸乳-服务端搭建"><a href="#酸酸乳-服务端搭建" class="headerlink" title="酸酸乳 服务端搭建"></a>酸酸乳 服务端搭建</h2><h3 id="安装基本库"><a href="#安装基本库" class="headerlink" title="安装基本库"></a>安装基本库</h3><p>centos：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure>
+
+<p>ubuntu/debian：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git</span><br></pre></td></tr></table></figure>
+
+<h3 id="拉取酸酸乳源码"><a href="#拉取酸酸乳源码" class="headerlink" title="拉取酸酸乳源码"></a>拉取酸酸乳源码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b manyuser https:&#x2F;&#x2F;github.com&#x2F;shadowsocksr-backup&#x2F;shadowsocksr.git</span><br></pre></td></tr></table></figure>
+
+<p>执行完毕后此目录会新建一个shadowsocksr目录，其中根目录的是多用户版，子目录中的是单用户版(即shadowsocksr/shadowsocks)。</p>
+<h3 id="服务端配置"><a href="#服务端配置" class="headerlink" title="服务端配置"></a>服务端配置</h3><p>进入根目录初始化配置</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/shadowsocksr</span><br><span class="line">bash initcfg.sh</span><br></pre></td></tr></table></figure>
+
+<p>之后进入子目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~&#x2F;shadowsocksr&#x2F;shadowsocks</span><br></pre></td></tr></table></figure>
+
+<p>快速运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python server.py -p 443 -k password -m aes-256-cfb -O auth_sha1_v4 -o http_simple</span><br><span class="line"></span><br><span class="line">#说明：-p 端口 -k 密码  -m 加密方式 -O 协议插件 -o 混淆插件</span><br></pre></td></tr></table></figure>
+
+<p>后台运行：(加上 <code>-d</code>  参数)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python server.py -p 443 -k password -m aes-256-cfb -O auth_sha1_v4 -o http_simple -d start</span><br></pre></td></tr></table></figure>
+
+<p>如果要停止/重启：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python server.py -d stop&#x2F;restart</span><br></pre></td></tr></table></figure>
+
+<p>查看日志：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -f &#x2F;var&#x2F;log&#x2F;shadowsocksr.log</span><br></pre></td></tr></table></figure>
+
+<p><strong>用 -h 查看所有参数</strong></p>
+<p>使用配置文件运行</p>
+<p>如果你的ss目录是<code>~/shadowsocksr</code>，进入这里 修改<code>user-config.json</code>中的<code>server_port</code>，<code>password</code>等字段</p>
+<p>运行子目录内的server.py：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python server.py</span><br></pre></td></tr></table></figure>
+
+<p>如果要在后台运行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python server.py -d start</span><br></pre></td></tr></table></figure>
+
+<p>如果要停止/重启：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python server.py -d stop&#x2F;restart</span><br></pre></td></tr></table></figure>
+
+<p>查看日志：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -f &#x2F;var&#x2F;log&#x2F;shadowsocksr.log</span><br></pre></td></tr></table></figure>
+
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -368,17 +433,17 @@
 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/eab1798a.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/eab1798a.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E7%A4%BA%E4%BE%8B/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/eab1798a.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -386,17 +451,17 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 16.18964559487731px;" class="tag-cloud-link">酸酸乳</a>
+    <a href="/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/" style="font-size: 8.155394944399156px;" class="tag-cloud-link">酸酸乳</a>
     
-    <a href="/tags/hexo/" style="font-size: 19.63559724886688px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 16.70273844521026px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 9.06101067277961px;" class="tag-cloud-link">防火墙</a>
+    <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 17.34884536702991px;" class="tag-cloud-link">防火墙</a>
     
-    <a href="/tags/Linux/" style="font-size: 10.19638134983413px;" class="tag-cloud-link">Linux</a>
+    <a href="/tags/Linux/" style="font-size: 16.82706736800348px;" class="tag-cloud-link">Linux</a>
     
-    <a href="/tags/Typora/" style="font-size: 11.60107968691488px;" class="tag-cloud-link">Typora</a>
+    <a href="/tags/Typora/" style="font-size: 13.438833969366515px;" class="tag-cloud-link">Typora</a>
     
-    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 19.563489126150483px;" class="tag-cloud-link">示例</a>
+    <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="font-size: 15.492049463067268px;" class="tag-cloud-link">示例</a>
     
 </div>
                 
